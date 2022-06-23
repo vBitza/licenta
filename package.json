@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd ./vue && npm install && cd ../express-server && npm install && npm run build-dist",
+    "heroku-prebuild": "cd ./vue && npm install && cd ../express-server && npm install && npm run build-dist",
     "start": "cross-env DEBUG=Chat-dev:* DEBUG_DEPTH=10 NODE_ENV=dev node ./server/server.js"
   },
   "repository": {
