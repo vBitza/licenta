@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/vBitza/licenta/issues"
   },
-  "homepage": "https://github.com/vBitza/licenta#readme"
+  "homepage": "https://github.com/vBitza/licenta#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
