@@ -14,7 +14,7 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
 function initConnection() {
-  let dbUrl = `mongodb+srv://express:express@cluster0-sdkay.mongodb.net/eztalk?retryWrites=true&w=majority`;
+  let dbUrl = `mongodb+srv://express:express@cluster0.sadbe.mongodb.net/eztalk?retryWrites=true&w=majority`;
   let localDbUrl = `mongodb://${ config.db.host }:${ config.db.port }/${ config.db.name }`;
 
   return new Promise((resolve, reject) => {
