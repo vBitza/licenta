@@ -2,3 +2,5 @@ node_modules
 .idea
 npm-debug.log*
 logs-output
+express-server/dist
+
