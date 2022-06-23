@@ -1,0 +1,35 @@
+{
+  "name": "Chat",
+  "version": "1.0.0",
+  "description": "Chat",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^2.6.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "debug": "^4.1.1",
+    "email-validator": "^2.0.4",
+    "express": "^4.16.4",
+    "heroku-ssl-redirect": "0.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.8",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "cross-env DEBUG=Chat-dev:* DEBUG_DEPTH=10 NODE_ENV=dev nodemon",
+    "start": "cross-env DEBUG=Chat-dev:* DEBUG_DEPTH=10 NODE_ENV=dev nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dist": "rm -rf dist && cd .. && cd vue && npm run build && mv ./dist ../express-server/",
+    "update-heroku": "git add . && git commit -am \"update\" && git push heroku master"
+  },
+  "author": "",
+  "license": "ISC"
+}
