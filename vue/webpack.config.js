@@ -76,10 +76,10 @@ module.exports = {
   externals: {
     // global app config object
     config: JSON.stringify({
-      apiUrl: process.env.NODE_ENV === 'production' ? 
-        'https://eztalk-dev.herokuapp.com/api/v1' : 'http://localhost:1338/api/v1',
+      apiUrl: process.env.NODE_ENV === 'production' ?
+        'https://discord-licenta.herokuapp.com/api/v1' : 'http://localhost:1338/api/v1',
       socketUrl: process.env.NODE_ENV === 'production' ?
-      	'https://eztalk-dev.herokuapp.com' : 'http://localhost:1338',
+      	'https://discord-licenta.herokuapp.com' : 'http://localhost:1338',
       iceServerConfiguration: {
         'iceServers': [{
           "url":"stun:global.stun.twilio.com:3478?transport=udp",
@@ -100,7 +100,7 @@ module.exports = {
           "urls":"turn:global.turn.twilio.com:443?transport=tcp",
           "credential":"j1oQKgPw75sFJbX5abH1MLQRfXl33RAYNxXDDtYPElI="
         }]
-      }  
+      }
     })
   }
 }
