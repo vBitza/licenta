@@ -1,0 +1,20 @@
+{
+  "name": "licenta-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd ./vue && npm install && cd ../server && npm install && npm run build-dist",
+    "start": "cross-env DEBUG=Chat-dev:* DEBUG_DEPTH=10 NODE_ENV=dev node ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vBitza/licenta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vBitza/licenta/issues"
+  },
+  "homepage": "https://github.com/vBitza/licenta#readme"
+}
